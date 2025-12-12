@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinéma du Village - Recherche</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Titre & Menus & Logo -->
+    <header>
+        <img src="assets/img/logo.png" alt="Logo Cinéma du Village" class="logo">
+        <h1>Cinéma du Village</h1>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="search.html">Recherches</a>
+        </nav>
+    </header>
+
+    <!-- Recherche de Film-->
+    <main>
+        <h2>Recherche de Films</h2>
+        <p class="intro">Recherchez un film en tapant son titre.</p>
+
+        <!-- Ma barre de Recherche-->
+        <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Entrez un titre de film..."
+            class="search-bar"
+        >
+
+        <!-- Affichage des Résultats -->
+        <div id="search-results" class="movies-container"></div>
+
+        <!-- Bouton charger plus  -->
+        <button id="load-more-search">Charger plus</button>
+        <p id="page-number"></p>
+
+
+    </main>
+
+
+    <footer>
+        <p>&copy; Cinéma du Village - Projet étudiant</p>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/search.js"></script>
+
+
+</body>
+</html>
